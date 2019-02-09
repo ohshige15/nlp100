@@ -7,7 +7,6 @@
 import string
 
 text = "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-print(string.ascii_letters)
 for word in text.split(" "):
     num_alpha = len([w for w in word if w in string.ascii_letters])
     print(num_alpha)

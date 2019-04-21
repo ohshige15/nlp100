@@ -8,5 +8,5 @@ from div03.sec20 import get_wiki_text
 
 text = get_wiki_text("イギリス")
 
-for media in re.findall(r"\[\[ファイル:(.+?)(\|.*)?\]\]", text):
-    print(media[0])
+for media in re.findall(r"\[\[(ファイル|File):(.+?)(\|.*)?\]\]", text):
+    print(media[1])

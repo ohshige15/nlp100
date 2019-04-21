@@ -4,7 +4,6 @@
 """
 
 import re
-import pprint
 from div03.sec20 import get_wiki_text
 from div03.sec25 import extract_basic_info
 
@@ -19,6 +18,7 @@ def remove_emphasis(text):
 
 
 if __name__ == "__main__":
+    import pprint
     uk_text = get_wiki_text("イギリス")
     result_dict = extract_basic_info(uk_text)
     result_dict = {k: remove_emphasis(v) for k, v in result_dict.items()}
